@@ -4,15 +4,16 @@ import './App.css';
 import Greeting from "./Greeting";
 
 function App() {
-    const greetingName = "Everybody!!!";
+    const greetingName: string = "Everybody!!!";
+    const nameArray: string[] = ["Valentin", "Katrin", "Johannes", "Alaa", "Gleb"];
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Greeting name={greetingName} />
-        <Greeting name="E V E R Y" />
-        <Greeting name="B O D Y" />
+          <p>Attention – mapping...</p>
+          {nameArray.map(name => <Greeting name={name} />)}
       </header>
     </div>
   );
