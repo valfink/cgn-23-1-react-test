@@ -11,6 +11,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Greeting name={greetingName} />
+        <Greeting name="E V E R Y" />
+        <Greeting name="B O D Y" />
       </header>
     </div>
   );
